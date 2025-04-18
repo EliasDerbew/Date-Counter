@@ -1,12 +1,43 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📅 Date Counter App
 
-Currently, two official plugins are available:
+The **Date Counter App** is a simple and interactive tool built with **React** that lets users add or subtract a specific number of days from the current date. It leverages the power of the `useReducer` hook for clean and scalable state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ **Dynamic Date Calculation**  
+  Add or subtract days from today's date in real-time.
+
+- 🔁 **Custom Step Control**  
+  Choose how many days to add or subtract at a time.
+
+- 🕒 **Live Date Display**  
+  Instantly see the updated date based on your interactions.
+
+- ♻️ **Reset Option**  
+  Easily reset to the original date and step value.
+
+- 🧠 **Powered by `useReducer`**  
+  All state transitions are cleanly handled using React's `useReducer` hook.
+
+---
+
+## ⚙️ Tech Stack
+
+- React (Functional Components)
+- useReducer for state logic
+- Optional styling: CSS/Tailwind
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/date-counter-app.git
+cd date-counter-app
+
