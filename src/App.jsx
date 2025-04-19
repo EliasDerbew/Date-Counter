@@ -49,8 +49,8 @@ export default function App() {
   };
 
   return (
-    <div className="app">
-      <div className="input__container">
+    <div className="h-screen flex justify-center items-center bg-slate-500 p-[20px] text-white">
+      <div className="bg-slate-900 p-[40px] rounded-lg flex flex-col  items-center gap-4 min-w-[25rem]">
         <div>
           <input
             type="range"
@@ -63,13 +63,18 @@ export default function App() {
         </div>
 
         <div>
-          <button onClick={dec}>-</button>
-          <input type="number" value={count} onChange={setDefault} />
-          <button onClick={inc}>+</button>
+          <button className="bg-blue-400 pl-[5px] pr-[5px] font-sans text-[1rem] cursor-pointer w-10 rounded-full" onClick={dec}>-</button>
+          <input
+            type="number"
+            value={count}
+            onChange={setDefault}
+            className="border-2 border-gray-500 m-[4px] pl-[10px] rounded-md focus:border-pink-600 bg-gray-700"
+          />
+          <button className="bg-blue-400 pl-[5px] pr-[5px] font-sans text-[1rem] cursor-pointer w-10 rounded-full" onClick={inc}>+</button>
         </div>
 
         <div>
-          <p>
+          <p className="font-sans">
             {count === 0
               ? `Today is ${strDate}`
               : today > date
@@ -79,7 +84,7 @@ export default function App() {
         </div>
 
         <div>
-          <button onClick={resetBtn}>Reset</button>
+          <button className="p-[5px] bg-blue-400 text-black rounded-lg  cursor-pointer" onClick={resetBtn}>Reset</button>
         </div>
       </div>
     </div>
